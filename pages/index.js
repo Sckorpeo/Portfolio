@@ -5,6 +5,7 @@ import Image from "next/image";
 //Self made components
 import Nav from "../components/Nav";
 import ProjectCard from "../components/ProjectCard";
+import ClickableIcon from "../components/ClickableIcon";
 
 //External icons
 import { AiFillLinkedin, AiFillGithub, AiFillHtml5 } from "react-icons/ai";
@@ -55,19 +56,49 @@ export default function Home() {
           </div>
         </section>
         <section id='stack' className='py-7'>
-          <h3 className='text-2xl py-6 lg:text-center'>My Stack</h3>
-          <div className='text-5xl flex justify-center gap-5 text-greenish-300 '>
-            <AiFillHtml5 />
-            <DiCss3 />
-            <SiJavascript />
-            <SiReact />
-            <DiNodejsSmall />
-            <SiExpress />
-            <SiPostgresql />
+          <h3 className='text-2xl py-6 md:text-center md:text-4xl md:py-10'>
+            My Stack
+          </h3>
+          <div className='text-5xl flex justify-center gap-3 text-greenish-300 md:text-7xl md:gap-7'>
+            <ClickableIcon
+              text={"HTML5"}
+              Icon={AiFillHtml5}
+              link={"https://developer.mozilla.org/en-US/docs/Glossary/HTML5"}
+            />
+            <ClickableIcon
+              text={"CSS"}
+              Icon={DiCss3}
+              link={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
+            />
+            <ClickableIcon
+              text={"JavaScript"}
+              Icon={SiJavascript}
+              link={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+            />
+            <ClickableIcon
+              text={"React.js"}
+              Icon={SiReact}
+              link={"https://reactjs.org/"}
+            />
+            <ClickableIcon
+              text={"Node.js"}
+              Icon={DiNodejsSmall}
+              link={"https://nodejs.org/en/docs/"}
+            />
+            <ClickableIcon
+              text={"Express.js"}
+              Icon={SiExpress}
+              link={"https://expressjs.com/"}
+            />
+            <ClickableIcon
+              text={"PostgreSQL"}
+              Icon={SiPostgresql}
+              link={"https://www.postgresql.org/"}
+            />
           </div>
         </section>
         <section id='portfolio'>
-          <h3 className='text-2xl py-6 lg:text-center'>Projects</h3>
+          <h3 className='text-2xl py-6 md:text-center md:text-4xl'>Projects</h3>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <ProjectCard
               altText={"Board game ecommerce website"}
@@ -85,7 +116,7 @@ export default function Home() {
               codeLink={"https://github.com/Sckorpeo/5-card-sabacc-prob-calc"}
               viewLink={"https://sabacc-5-card-prob-calc.herokuapp.com/"}
               desc={
-                "The Board Company is a B2C Board Game e-commerce website. Users can add products to cart, favorite products, save products for later, purchase products, comment on products. Admins have functionality to edit, add, delete products."
+                "Static webpage that explains my exprience finding Sabacc, why I decided to change the standard rules, and what my new ruleset is. A button towards the bottom of the page leads to a hand probability calculator that a user can test out card probabilities."
               }
               image={sabacc}
             />
