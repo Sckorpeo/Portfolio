@@ -32,7 +32,7 @@ export default function Home() {
         <section className=' min-h-screen'>
           <Nav />
           <div className='text-center p-10'>
-            <h2 className='text-4xl py-2'>Kieran Brugman</h2>
+            <h2 className='text-4xl py-2 font-bold'>Kieran Brugman</h2>
             <h3 className='text-lg py-2 text-greenish-300'>
               Fullstack Web Developer
             </h3>
@@ -56,10 +56,10 @@ export default function Home() {
           </div>
         </section>
         <section id='stack' className='py-7'>
-          <h3 className='text-2xl py-6 md:text-center md:text-4xl md:py-10'>
+          <h3 className='text-2xl py-6 md:text-center md:text-4xl md:py-10 font-bold'>
             My Stack
           </h3>
-          <div className='text-5xl flex justify-center gap-3 text-greenish-300 md:text-7xl md:gap-7'>
+          <div className='text-4xl flex justify-center gap-3 text-greenish-300 md:text-7xl md:gap-7'>
             <ClickableIcon
               text={"HTML5"}
               Icon={AiFillHtml5}
@@ -98,7 +98,9 @@ export default function Home() {
           </div>
         </section>
         <section id='portfolio'>
-          <h3 className='text-2xl py-6 md:text-center md:text-4xl'>Projects</h3>
+          <h3 className='text-2xl py-6 md:text-center md:text-4xl font-bold'>
+            Projects
+          </h3>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <ProjectCard
               altText={"Board game ecommerce website"}
