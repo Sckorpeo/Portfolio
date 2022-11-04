@@ -56,10 +56,10 @@ export default function Home() {
           </div>
         </section>
         <section id='stack' className='py-7'>
-          <h3 className='text-2xl py-6 md:text-center md:text-4xl md:py-10 font-bold'>
+          <h3 className='text-2xl py-6 md:text-center md:text-4xl md:py-10 font-bold '>
             My Stack
           </h3>
-          <div className='text-4xl flex justify-center gap-3 text-greenish-300 md:text-7xl md:gap-7'>
+          <div className='text-4xl flex justify-center gap-3 text-greenish-300 md:text-7xl md:gap-7 sm:text-5xl'>
             <ClickableIcon
               text={"HTML5"}
               Icon={AiFillHtml5}
