@@ -43,7 +43,7 @@ export default function Home() {
               started me down the long rabbit hole of programming.
             </p>
           </div>
-          <div className='text-5xl flex justify-center text-gray-600 gap-16 text-greenish-400'>
+          <div className='text-5xl flex justify-center text-gray-600 gap-16 text-greenish-400 md:text-7xl'>
             <a href='https://www.linkedin.com/in/kieran-brugman/'>
               <AiFillLinkedin />
             </a>
@@ -55,7 +55,7 @@ export default function Home() {
             <Image src={profileImg} layout='fill' objectFit='cover' />
           </div>
         </section>
-        <section id='stack' className='py-7'>
+        <section id='stack'>
           <h3 className='text-2xl py-6 md:text-center md:text-4xl md:py-10 font-bold '>
             My Stack
           </h3>
@@ -98,10 +98,10 @@ export default function Home() {
           </div>
         </section>
         <section id='portfolio'>
-          <h3 className='text-2xl py-6 md:text-center md:text-4xl font-bold'>
+          <h3 className='text-2xl pt-6 md:pt-10 md:text-center md:text-4xl font-bold '>
             Projects
           </h3>
-          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
+          <div className='flex flex-col gap-10 py-6 md:py-10 lg:flex-row lg:flex-wrap'>
             <ProjectCard
               altText={"Board game ecommerce website"}
               title={"The Board Company"}
@@ -118,7 +118,7 @@ export default function Home() {
               codeLink={"https://github.com/Sckorpeo/5-card-sabacc-prob-calc"}
               viewLink={"https://sabacc-5-card-prob-calc.herokuapp.com/"}
               desc={
-                "Static webpage that explains my exprience finding Sabacc, why I decided to change the standard rules, and what my new ruleset is. A button towards the bottom of the page leads to a hand probability calculator that a user can test out card probabilities."
+                "Static webpage that explains my experience finding Sabacc, why I decided to change the standard rules, and what my new ruleset is. A button towards the bottom of the page leads to a hand probability calculator that a user can test out card probabilities."
               }
               image={sabacc}
             />
