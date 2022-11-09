@@ -16,6 +16,7 @@ import { SiJavascript, SiReact, SiExpress, SiPostgresql } from "react-icons/si";
 import profileImg from "../public/port_img-removebg-preview.png";
 import boardGif from "../public/boardgames.gif";
 import sabacc from "../public/sabaccCardGame.gif";
+import upref from "../public/upref.gif";
 
 export default function Home() {
   return (
@@ -106,6 +107,20 @@ export default function Home() {
             Projects
           </h3>
           <div className='flex flex-col gap-10 py-6 md:py-10 lg:flex-row lg:flex-wrap'>
+            <ProjectCard
+              altText={
+                "Restaurant preference website landing page and search page"
+              }
+              title={"U Pref"}
+              codeLink={
+                "https://github.com/Thombuhl/Fullstack-Capstone-Review-App"
+              }
+              viewLink={"https://upref.herokuapp.com/"}
+              desc={
+                "Have you ever been to a highly rated restaurant and wondered whats all the hype about? Well Upref was designed to keep your preferences in mind. Set your restaurant preferences and get a customized Upref score."
+              }
+              image={upref}
+            />
             <ProjectCard
               altText={"Board game ecommerce website"}
               title={"The Board Company"}
