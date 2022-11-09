@@ -17,6 +17,7 @@ import profileImg from "../public/port_img-removebg-preview.png";
 import boardGif from "../public/boardgames.gif";
 import sabacc from "../public/sabaccCardGame.gif";
 import upref from "../public/upref.gif";
+import colorpalette from "../public/palettepicker.gif";
 
 export default function Home() {
   return (
@@ -140,6 +141,16 @@ export default function Home() {
                 "Static webpage that explains my experience finding Sabacc, why I decided to change the standard rules, and what my new ruleset is. A button towards the bottom of the page leads to a hand probability calculator that a user can test out card probabilities."
               }
               image={sabacc}
+            />
+            <ProjectCard
+              altText={"A color picker palette creator website"}
+              title={"Make-A-Palette"}
+              codeLink={"https://github.com/Sckorpeo/capstone-color-project"}
+              viewLink={"https://kieranb-make-a-palette.herokuapp.com/"}
+              desc={
+                "Created a React web application that allows the user to create their own color palettes, copy color hex/ rgb/ rgba code to clipboard by clicking the color, and drill down on specific colors to view different hues. Palettes are saved to the client's local storage. No use of external databases. Utilized multiple node packages. The app also employs responsive design for multiple screen sizes."
+              }
+              image={colorpalette}
             />
           </div>
         </section>
