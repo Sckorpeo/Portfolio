@@ -43,7 +43,7 @@ export default function Home() {
               started me down the long rabbit hole of programming.
             </p>
           </div>
-          <div className='text-5xl flex justify-center text-gray-600 gap-16 text-greenish-400 md:text-7xl'>
+          <div className='text-5xl flex justify-center  gap-16 text-greenish-400 md:text-7xl'>
             <a href='https://www.linkedin.com/in/kieran-brugman/'>
               <AiFillLinkedin />
             </a>
@@ -52,7 +52,11 @@ export default function Home() {
             </a>
           </div>
           <div className='rounded-full relative overflow-hidden h-60 w-60 mt-20 mx-auto bg-gradient-to-b from-greenish-300 mb-8 md:h-96 md:w-96'>
-            <Image src={profileImg} layout='fill' objectFit='cover' />
+            <Image
+              src={profileImg}
+              className=' object-cover h-[100%] w-[100%] inset-0'
+              alt='Image of Kieran Brugman'
+            />
           </div>
         </section>
         <section id='stack'>
