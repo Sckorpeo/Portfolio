@@ -109,20 +109,6 @@ export default function Home() {
           </h3>
           <div className='flex flex-col gap-10 py-6 md:py-10 lg:flex-row lg:flex-wrap'>
             <ProjectCard
-              altText={
-                "Restaurant preference website landing page and search page"
-              }
-              title={"U Pref"}
-              codeLink={
-                "https://github.com/Thombuhl/Fullstack-Capstone-Review-App"
-              }
-              viewLink={"https://upref.herokuapp.com/"}
-              desc={
-                "Have you ever been to a highly rated restaurant and wondered whats all the hype about? Well Upref was designed to keep your preferences in mind. Set your restaurant preferences and get a customized Upref score."
-              }
-              image={upref}
-            />
-            <ProjectCard
               altText={"Board game ecommerce website"}
               title={"The Board Company"}
               codeLink={"https://github.com/Sckorpeo/acme-shopping"}
@@ -151,6 +137,18 @@ export default function Home() {
                 "Created a React web application that allows the user to create their own color palettes, copy color hex/ rgb/ rgba code to clipboard by clicking the color, and drill down on specific colors to view different hues. Palettes are saved to the client's local storage. No use of external databases. Utilized multiple node packages. The app also employs responsive design for multiple screen sizes."
               }
               image={colorpalette}
+            />
+            <ProjectCard
+              altText={
+                "Restaurant preference website landing page and search page"
+              }
+              title={"U Pref"}
+              codeLink={"https://github.com/Sckorpeo/Upref"}
+              viewLink={"https://upref-kieran.herokuapp.com/"}
+              desc={
+                "(Login with Username: cody and Password: 123) Have you ever been to a highly rated restaurant and wondered whats all the hype about? Well Upref was designed to keep your preferences in mind. Set your restaurant preferences and get a customized Upref score."
+              }
+              image={upref}
             />
           </div>
         </section>
